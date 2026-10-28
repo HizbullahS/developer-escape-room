@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Five locks. One release. A browser escape room for curious developers.">
+  <meta name="theme-color" content="#101311"><title>Merge or Die — Developer Escape Room</title>
+  <link rel="stylesheet" href="style.css"><script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-mark">[↗]</span> MERGE OR DIE <span class="edition">/ VOL. 01</span></a><div class="system"><span class="pulse"></span> LOCAL SIMULATION <span class="divider">/</span> <button id="sound" aria-pressed="false">SOUND OFF</button></div></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">THE DEVELOPER ESCAPE ROOM</p><h1>Your last commit.<br>Your only way <em>out.</em></h1><p class="lead">The release is frozen. The doors are locked. Debug your way<br class="desktop"> through five systems before you become the incident report.</p></div><div class="mission-stamp"><span>INCIDENT</span><strong>#0408</strong><span>SERVER ROOM · 03:14 AM</span><div>ACCESS REVOKED ↗</div></div></section>
+    <section class="console" aria-label="Escape room game">
+      <div class="console-bar"><div><span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span><span class="terminal-path">escape-room / production</span></div><span id="session-status">SESSION READY</span></div>
+      <div class="game-grid"><aside><p class="eyebrow">SYSTEM LOCKS <span id="lock-count">0 / 5</span></p><nav id="rooms" aria-label="Puzzle selection"></nav><div class="sidebar-bottom"><span class="small-label">YOUR OBJECTIVE</span><p>Restore all five systems.<br>Make it to the exit.</p><div class="progress"><div id="progress"></div></div><span id="progress-label">0% SYSTEMS RESTORED</span></div></aside>
+      <div class="workspace"><div class="workspace-top"><span id="category" class="eyebrow"></span><div class="timer" aria-label="Elapsed time">◷ <span id="timer">00:00</span></div></div><div id="puzzle"></div></div></div>
+      <div class="console-footer"><span><span class="pulse"></span> <span id="footer-status">AWAITING OPERATOR</span></span><span>NO INSTALLS. JUST INSTINCT.</span></div>
+    </section>
+    <section class="underbar"><p><span>↳</span> Built for the curious. Break nothing. Learn something.</p><button id="restart">↻ RESET SESSION</button></section>
+    <footer><span>A SMALL GAME ABOUT BIG DEVELOPER ENERGY.</span><a href="https://github.com/HizbullahS/developer-escape-room" target="_blank" rel="noreferrer">VIEW SOURCE ↗</a></footer>
+  </main>
+  <dialog id="reset-dialog"><h2>Start a fresh session?</h2><p>Your current progress and timer will be reset.</p><div class="dialog-actions"><button id="cancel-reset">Keep playing</button><button class="primary" id="confirm-reset">Reset session ↗</button></div></dialog>
+</body></html>

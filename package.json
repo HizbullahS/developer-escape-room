@@ -1,0 +1,9 @@
+{
+  "name": "developer-escape-room",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Merge or Die: a five-puzzle developer escape room",
+  "type": "module",
+  "scripts": { "start": "node server.js", "test": "node --test" },
+  "engines": { "node": ">=18" }
+}
